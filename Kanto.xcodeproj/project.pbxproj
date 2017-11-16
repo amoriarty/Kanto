@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		EC233B261FBDB05500B65D90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B251FBDB05500B65D90 /* AppDelegate.swift */; };
-		EC233B281FBDB05500B65D90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B271FBDB05500B65D90 /* ViewController.swift */; };
-		EC233B2B1FBDB05500B65D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC233B291FBDB05500B65D90 /* Main.storyboard */; };
+		EC233B281FBDB05500B65D90 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B271FBDB05500B65D90 /* MainController.swift */; };
 		EC233B2D1FBDB05500B65D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC233B2C1FBDB05500B65D90 /* Assets.xcassets */; };
 		EC233B301FBDB05500B65D90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC233B2E1FBDB05500B65D90 /* LaunchScreen.storyboard */; };
+		EC233B391FBDB37B00B65D90 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B381FBDB37B00B65D90 /* MapController.swift */; };
+		EC233B3B1FBDB3CB00B65D90 /* PlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B3A1FBDB3CB00B65D90 /* PlaceController.swift */; };
+		EC233B3E1FBDB78C00B65D90 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B3D1FBDB78C00B65D90 /* Place.swift */; };
+		EC233B401FBDBCA200B65D90 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B3F1FBDBCA200B65D90 /* Constants.swift */; };
+		EC233B421FBDD68D00B65D90 /* MapController+MapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B411FBDD68C00B65D90 /* MapController+MapKit.swift */; };
+		EC233B441FBDD72400B65D90 /* MapController+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B431FBDD72400B65D90 /* MapController+Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC233B221FBDB05400B65D90 /* Kanto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kanto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC233B251FBDB05500B65D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC233B271FBDB05500B65D90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC233B2A1FBDB05500B65D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC233B271FBDB05500B65D90 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		EC233B2C1FBDB05500B65D90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC233B2F1FBDB05500B65D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC233B311FBDB05500B65D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC233B381FBDB37B00B65D90 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		EC233B3A1FBDB3CB00B65D90 /* PlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceController.swift; sourceTree = "<group>"; };
+		EC233B3D1FBDB78C00B65D90 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		EC233B3F1FBDBCA200B65D90 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EC233B411FBDD68C00B65D90 /* MapController+MapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapController+MapKit.swift"; sourceTree = "<group>"; };
+		EC233B431FBDD72400B65D90 /* MapController+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapController+Location.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,34 @@
 			isa = PBXGroup;
 			children = (
 				EC233B251FBDB05500B65D90 /* AppDelegate.swift */,
-				EC233B271FBDB05500B65D90 /* ViewController.swift */,
-				EC233B291FBDB05500B65D90 /* Main.storyboard */,
+				EC233B3F1FBDBCA200B65D90 /* Constants.swift */,
+				EC233B371FBDB35000B65D90 /* Controllers */,
+				EC233B3C1FBDB76900B65D90 /* Models */,
 				EC233B2C1FBDB05500B65D90 /* Assets.xcassets */,
 				EC233B2E1FBDB05500B65D90 /* LaunchScreen.storyboard */,
 				EC233B311FBDB05500B65D90 /* Info.plist */,
 			);
 			path = Kanto;
+			sourceTree = "<group>";
+		};
+		EC233B371FBDB35000B65D90 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC233B271FBDB05500B65D90 /* MainController.swift */,
+				EC233B381FBDB37B00B65D90 /* MapController.swift */,
+				EC233B411FBDD68C00B65D90 /* MapController+MapKit.swift */,
+				EC233B431FBDD72400B65D90 /* MapController+Location.swift */,
+				EC233B3A1FBDB3CB00B65D90 /* PlaceController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC233B3C1FBDB76900B65D90 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC233B3D1FBDB78C00B65D90 /* Place.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +156,6 @@
 			files = (
 				EC233B301FBDB05500B65D90 /* LaunchScreen.storyboard in Resources */,
 				EC233B2D1FBDB05500B65D90 /* Assets.xcassets in Resources */,
-				EC233B2B1FBDB05500B65D90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +166,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC233B281FBDB05500B65D90 /* ViewController.swift in Sources */,
+				EC233B421FBDD68D00B65D90 /* MapController+MapKit.swift in Sources */,
+				EC233B3B1FBDB3CB00B65D90 /* PlaceController.swift in Sources */,
+				EC233B281FBDB05500B65D90 /* MainController.swift in Sources */,
+				EC233B391FBDB37B00B65D90 /* MapController.swift in Sources */,
 				EC233B261FBDB05500B65D90 /* AppDelegate.swift in Sources */,
+				EC233B441FBDD72400B65D90 /* MapController+Location.swift in Sources */,
+				EC233B3E1FBDB78C00B65D90 /* Place.swift in Sources */,
+				EC233B401FBDBCA200B65D90 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EC233B291FBDB05500B65D90 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC233B2A1FBDB05500B65D90 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC233B2E1FBDB05500B65D90 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
